@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.surendra.samp2.MainActivity">
+
+    <ImageButton
+        android:layout_width="125dp"
+        android:layout_height="160dp"
+        app:srcCompat="@drawable/mag1"
+        android:id="@+id/but2"
+        tools:scaleType="fitXY"
+        android:layout_marginTop="12dp"
+        android:scaleType="fitXY"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Edition 01 Rating 4.7/5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/but2"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="125dp"
+        android:layout_height="160dp"
+        app:srcCompat="@drawable/mag2"
+        android:id="@+id/imageButton2"
+        android:scaleType="fitXY"
+        tools:scaleType="fitXY"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="18dp"
+        android:layout_above="@+id/textView2"
+        android:layout_alignStart="@+id/but2" />
+
+    <TextView
+        android:text="Edition 02 Rating 4.8/5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:id="@+id/textView2"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView" />
+</RelativeLayout>
